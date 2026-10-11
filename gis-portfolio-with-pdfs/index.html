@@ -1,1 +1,465 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="GIS portfolio of Henry Reissig, GISP"><title>Henry Reissig, GISP | GIS Portfolio</title><link rel="stylesheet" href="styles.css"><script src="projects.js" defer></script><script src="script.js" defer></script></head><body><header class="header"><nav class="wrap nav"><a class="logo" href="#home"><span class="monogram">HR</span> Henry Reissig <span class="muted">GISP</span></a><div class="navlinks"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a></div></nav></header><main><section class="hero" id="home"><div class="wrap hero-grid"><div><p class="eyebrow">GIS PROFESSIONAL · SPATIAL DATA · WEB MAPPING</p><h1>Making sense of the world <em>through location.</em></h1><p class="lead">I'm Henry Reissig, GISP. I build spatial analyses, demographic research workflows, and interactive maps that turn geographic data into practical insight.</p><div class="actions"><a class="btn primary" href="#projects">Explore my work ↗</a><a class="btn secondary" href="#contact">Get in touch</a></div><div class="hero-tags"><span>ArcGIS Pro</span><span>Python / ArcPy</span><span>JavaScript</span><span>Spatial analysis</span></div></div><div class="map-panel" aria-label="Stylized geographic map illustration"><div class="panel-top"><span>SPATIAL INTELLIGENCE</span><span>● LIVE PERSPECTIVE</span></div><svg viewBox="0 0 500 420" role="img" aria-label="Abstract contour and point map"><defs><pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#4575a5"/></pattern></defs><rect width="500" height="420" fill="url(#dots)"/><g fill="none" stroke="#477aa8" stroke-width="2" opacity=".8"><path d="M-20 70 Q90 -40 190 80 T520 60"/><path d="M-20 105 Q90 -5 190 115 T520 95"/><path d="M-20 140 Q90 30 190 150 T520 130"/><path d="M-20 290 Q90 180 190 300 T520 280"/><path d="M-20 325 Q90 215 190 335 T520 315"/><path d="M-20 360 Q90 250 190 370 T520 350"/></g><path d="M45 400 Q150 210 245 235 T450 15" fill="none" stroke="#62d9ec" stroke-width="4" stroke-dasharray="9 10"/><g fill="#73e0f2" stroke="#102b50" stroke-width="7"><circle cx="148" cy="253" r="12"/><circle cx="245" cy="235" r="12"/><circle cx="368" cy="128" r="12"/></g><g fill="#d4e9ff" font-size="13" font-family="Arial"><text x="166" y="247">LOCATION A</text><text x="263" y="228">LOCATION B</text><text x="385" y="121">LOCATION C</text></g></svg><div class="panel-bottom">GEOGRAPHY <span>↗</span> DATA <span>↗</span> DECISIONS</div></div></div></section><section id="about" class="section"><div class="wrap split"><div><p class="eyebrow">01 / ABOUT</p><h2>Data is more useful when you know <em>where.</em></h2></div><div><p>I'm a GIS and spatial data professional with experience supporting healthcare and public-sector programs through spatial analysis, demographic research, data analytics, and web GIS.</p><p>My work combines geographic methods, programming, and clear visual communication—from data preparation and geocoding to interactive applications and dashboards. I also have experience supporting GIS learning and technical training.</p><div class="credential"><strong>GISP Certified</strong><span>Geographic Information Systems Professional · Valid through January 2029</span></div></div></div></section><section id="projects" class="section projects-section"><div class="wrap"><div class="section-head"><div><p class="eyebrow">02 / SELECTED WORK</p><h2>Featured projects<span class="blue">.</span></h2></div><p>Browse original GIS maps, presentations, and research reports as PDFs, plus newer project overviews. Add new work by editing projects.js.</p></div><div id="filters" class="filters" aria-label="Filter projects"></div><div id="projectGrid" class="project-grid"></div><p class="note">PDF documents are original archived work from 2016–2018. The newer project overview cards are summaries, not linked reports.</p></div></section><section id="skills" class="section"><div class="wrap"><p class="eyebrow">03 / TECHNICAL EXPERTISE</p><h2>Tools & methods<span class="blue">.</span></h2><div class="skill-grid"><article><h3>GIS & Web Mapping</h3><p>ArcGIS Pro, ArcGIS Enterprise, ArcGIS Experience Builder, ArcGIS Maps SDK for JavaScript, Leaflet, Field Maps</p></article><article><h3>Spatial Analysis</h3><p>Geocoding, buffers, overlay, site selection, proximity, network and drive-time analysis, raster analysis</p></article><article><h3>Programming & Data</h3><p>Python, ArcPy, JavaScript, SQL, SAS, SPSS, automation, data modeling, dashboards</p></article><article><h3>Demographics & Imagery</h3><p>U.S. Census data, population analysis, Landsat, NDVI, NDBI, image interpretation, accuracy assessment</p></article></div></div></section><section id="education" class="section education-section"><div class="wrap"><p class="eyebrow">04 / EDUCATION & CREDENTIALS</p><h2>Education<span class="blue">.</span></h2><div class="education-grid"><article><span>GRADUATE STUDY</span><h3>Master of Applied Geography</h3><p>Texas State University</p></article><article><span>GRADUATE & UNDERGRADUATE STUDY</span><h3>M.S. and B.S. in Physics</h3><p>Academic background in quantitative science</p></article><article><span>GIS EDUCATION</span><h3>A.A.S. in GIS & GIS Certificates</h3><p>Austin Community College</p></article><article><span>PROFESSIONAL CREDENTIAL</span><h3>GISP Certification</h3><p>Certified Geographic Information Systems Professional · Expires January 2029</p></article></div></div></section><section id="contact" class="section contact"><div class="wrap contact-grid"><div><p class="eyebrow">05 / CONTACT</p><h2>Let's connect about <em>geographic data.</em></h2><p>Open to conversations about GIS, spatial analysis, web mapping, and data-driven problem solving.</p></div><div class="contact-actions"><a class="btn light" href="mailto:henry.reissig@gmail.com">Email me ↗</a><a href="https://www.linkedin.com/in/henry-reissig/" target="_blank" rel="noopener noreferrer">LinkedIn profile ↗</a></div></div></section></main><footer><div class="wrap footer"><span>© <span id="year"></span> Henry Reissig, GISP</span><span>Built with HTML · CSS · JavaScript</span><a href="#home">Back to top ↑</a></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta
+        name="description"
+        content="GIS portfolio of Henry Reissig, GISP"
+    >
+
+    <title>Henry Reissig, GISP | GIS Portfolio</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript -->
+    <script src="projects.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ========================================
+         HEADER AND NAVIGATION
+    ========================================= -->
+
+    <header class="header">
+        <nav class="wrap nav">
+
+            <a class="logo" href="#home">
+                <span class="monogram">HR</span>
+                Henry Reissig
+                <span class="muted">GISP</span>
+            </a>
+
+            <div class="navlinks">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ========================================
+             HOME / HERO SECTION
+        ========================================= -->
+
+        <section class="hero" id="home">
+            <div class="wrap hero-grid">
+
+                <!-- Introduction -->
+                <div>
+                    <p class="eyebrow">
+                        GIS PROFESSIONAL · SPATIAL DATA · WEB MAPPING
+                    </p>
+
+                    <h1>
+                        Making sense of the world
+                        <em>through location.</em>
+                    </h1>
+
+                    <p class="lead">
+                        I'm Henry Reissig, GISP. I build spatial analyses,
+                        demographic research workflows, and interactive
+                        maps that turn geographic data into practical insight.
+                    </p>
+
+                    <div class="actions">
+                        <a class="btn primary" href="#projects">
+                            Explore my work ↗
+                        </a>
+
+                        <a class="btn secondary" href="#contact">
+                            Get in touch
+                        </a>
+                    </div>
+
+                    <div class="hero-tags">
+                        <span>ArcGIS Pro</span>
+                        <span>Python / ArcPy</span>
+                        <span>JavaScript</span>
+                        <span>Spatial analysis</span>
+                    </div>
+                </div>
+
+                <!-- Map Illustration -->
+                <div
+                    class="map-panel"
+                    aria-label="Stylized geographic map illustration"
+                >
+
+                    <div class="panel-top">
+                        <span>SPATIAL INTELLIGENCE</span>
+                        <span>● LIVE PERSPECTIVE</span>
+                    </div>
+
+                    <svg
+                        viewBox="0 0 500 420"
+                        role="img"
+                        aria-label="Abstract contour and point map"
+                    >
+
+                        <defs>
+                            <pattern
+                                id="dots"
+                                width="22"
+                                height="22"
+                                patternUnits="userSpaceOnUse"
+                            >
+                                <circle
+                                    cx="1"
+                                    cy="1"
+                                    r="1"
+                                    fill="#4575a5"
+                                />
+                            </pattern>
+                        </defs>
+
+                        <rect
+                            width="500"
+                            height="420"
+                            fill="url(#dots)"
+                        />
+
+                        <!-- Contour Lines -->
+                        <g
+                            fill="none"
+                            stroke="#477aa8"
+                            stroke-width="2"
+                            opacity=".8"
+                        >
+                            <path d="M-20 70 Q90 -40 190 80 T520 60"/>
+                            <path d="M-20 105 Q90 -5 190 115 T520 95"/>
+                            <path d="M-20 140 Q90 30 190 150 T520 130"/>
+                            <path d="M-20 290 Q90 180 190 300 T520 280"/>
+                            <path d="M-20 325 Q90 215 190 335 T520 315"/>
+                            <path d="M-20 360 Q90 250 190 370 T520 350"/>
+                        </g>
+
+                        <!-- Route -->
+                        <path
+                            d="M45 400 Q150 210 245 235 T450 15"
+                            fill="none"
+                            stroke="#62d9ec"
+                            stroke-width="4"
+                            stroke-dasharray="9 10"
+                        />
+
+                        <!-- Location Markers -->
+                        <g
+                            fill="#73e0f2"
+                            stroke="#102b50"
+                            stroke-width="7"
+                        >
+                            <circle cx="148" cy="253" r="12"/>
+                            <circle cx="245" cy="235" r="12"/>
+                            <circle cx="368" cy="128" r="12"/>
+                        </g>
+
+                        <!-- Location Labels -->
+                        <g
+                            fill="#d4e9ff"
+                            font-size="13"
+                            font-family="Arial"
+                        >
+                            <text x="166" y="247">LOCATION A</text>
+                            <text x="263" y="228">LOCATION B</text>
+                            <text x="385" y="121">LOCATION C</text>
+                        </g>
+
+                    </svg>
+
+                    <div class="panel-bottom">
+                        GEOGRAPHY
+                        <span>↗</span>
+                        DATA
+                        <span>↗</span>
+                        DECISIONS
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             ABOUT SECTION
+        ========================================= -->
+
+        <section id="about" class="section">
+            <div class="wrap split">
+
+                <div>
+                    <p class="eyebrow">01 / ABOUT</p>
+
+                    <h2>
+                        Data is more useful when you know
+                        <em>where.</em>
+                    </h2>
+                </div>
+
+                <div>
+                    <p>
+                        I'm a GIS and spatial data professional with
+                        experience supporting healthcare and public-sector
+                        programs through spatial analysis, demographic
+                        research, data analytics, and web GIS.
+                    </p>
+
+                    <p>
+                        My work combines geographic methods, programming,
+                        and clear visual communication—from data preparation
+                        and geocoding to interactive applications and
+                        dashboards. I also have experience supporting
+                        GIS learning and technical training.
+                    </p>
+
+                    <div class="credential">
+                        <strong>GISP Certified</strong>
+
+                        <span>
+                            Geographic Information Systems Professional
+                            · Valid through January 2029
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================
+             GIS PROJECTS SECTION
+        ========================================= -->
+
+        <section id="projects" class="section projects-section">
+            <div class="wrap">
+
+                <div class="section-head">
+
+                    <div>
+                        <p class="eyebrow">02 / SELECTED WORK</p>
+
+                        <h2>
+                            Featured projects<span class="blue">.</span>
+                        </h2>
+                    </div>
+
+                    <p>
+                        Browse original GIS maps, presentations, and
+                        research reports as PDFs, plus newer project
+                        overviews. Add new work by editing projects.js.
+                    </p>
+
+                </div>
+
+                <!-- Project Category Filters -->
+                <div
+                    id="filters"
+                    class="filters"
+                    aria-label="Filter projects"
+                ></div>
+
+                <!-- Projects Loaded by JavaScript -->
+                <div
+                    id="projectGrid"
+                    class="project-grid"
+                ></div>
+
+                <p class="note">
+                    PDF documents are original archived work from
+                    2016–2018. The newer project overview cards
+                    are summaries, not linked reports.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- ========================================
+             TECHNICAL SKILLS SECTION
+        ========================================= -->
+
+        <section id="skills" class="section">
+            <div class="wrap">
+
+                <p class="eyebrow">03 / TECHNICAL EXPERTISE</p>
+
+                <h2>
+                    Tools & methods<span class="blue">.</span>
+                </h2>
+
+                <div class="skill-grid">
+
+                    <article>
+                        <h3>GIS & Web Mapping</h3>
+
+                        <p>
+                            ArcGIS Pro, ArcGIS Enterprise,
+                            ArcGIS Experience Builder,
+                            ArcGIS Maps SDK for JavaScript,
+                            Leaflet, Field Maps
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Spatial Analysis</h3>
+
+                        <p>
+                            Geocoding, buffers, overlay, site selection,
+                            proximity, network and drive-time analysis,
+                            raster analysis
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Programming & Data</h3>
+
+                        <p>
+                            Python, ArcPy, JavaScript, SQL, SAS, SPSS,
+                            automation, data modeling, dashboards
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Demographics & Imagery</h3>
+
+                        <p>
+                            U.S. Census data, population analysis,
+                            Landsat, NDVI, NDBI, image interpretation,
+                            accuracy assessment
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             EDUCATION AND CERTIFICATIONS
+        ========================================= -->
+
+        <section id="education" class="section education-section">
+            <div class="wrap">
+
+                <p class="eyebrow">04 / EDUCATION & CREDENTIALS</p>
+
+                <h2>
+                    Education<span class="blue">.</span>
+                </h2>
+
+                <div class="education-grid">
+
+                    <article>
+                        <span>GRADUATE STUDY</span>
+
+                        <h3>Master of Applied Geography</h3>
+
+                        <p>Texas State University</p>
+                    </article>
+
+                    <article>
+                        <span>GRADUATE & UNDERGRADUATE STUDY</span>
+
+                        <h3>M.S. and B.S. in Physics</h3>
+
+                        <p>Academic background in quantitative science</p>
+                    </article>
+
+                    <article>
+                        <span>GIS EDUCATION</span>
+
+                        <h3>A.A.S. in GIS & GIS Certificates</h3>
+
+                        <p>Austin Community College</p>
+                    </article>
+
+                    <article>
+                        <span>PROFESSIONAL CREDENTIAL</span>
+
+                        <h3>GISP Certification</h3>
+
+                        <p>
+                            Certified Geographic Information Systems
+                            Professional · Expires January 2029
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             CONTACT SECTION
+        ========================================= -->
+
+        <section id="contact" class="section contact">
+            <div class="wrap contact-grid">
+
+                <div>
+                    <p class="eyebrow">05 / CONTACT</p>
+
+                    <h2>
+                        Let's connect about
+                        <em>geographic data.</em>
+                    </h2>
+
+                    <p>
+                        Open to conversations about GIS, spatial analysis,
+                        web mapping, and data-driven problem solving.
+                    </p>
+                </div>
+
+                <div class="contact-actions">
+
+                    <a
+                        class="btn light"
+                        href="mailto:henry.reissig@gmail.com"
+                    >
+                        Email me ↗
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/henry-reissig/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn profile ↗
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer>
+        <div class="wrap footer">
+
+            <span>
+                © <span id="year"></span>
+                Henry Reissig, GISP
+            </span>
+
+            <span>
+                Built with HTML · CSS · JavaScript
+            </span>
+
+            <a href="#home">
+                Back to top ↑
+            </a>
+
+        </div>
+    </footer>
+
+</body>
+</html>
